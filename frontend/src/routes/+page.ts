@@ -1,3 +1,6 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+/** @type {import('./$types').PageLoad} */
+export async function load({ fetch }: { fetch: any }) {
+	const res = await fetch('http://127.0.0.1:1337/api/posts?populate=*');
+	const response = await res.json();
+	return { posts: response.data };
+}
