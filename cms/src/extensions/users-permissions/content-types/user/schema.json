@@ -68,6 +68,9 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "author"
+    },
+    "displayName": {
+      "type": "string"
     }
   }
 }
