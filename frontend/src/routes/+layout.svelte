@@ -3,7 +3,7 @@
 </script>
 <div class="p-4 flex justify-center">
 	<div class="p-4 flex flex-col">
-		<h1 class="text-8xl yellowtail">Kyler Figgins</h1>
+		<h1 class="text-8xl yellowtail text-center">Kyler Figgins</h1>
 		<slot/>
 	</div>
 </div>

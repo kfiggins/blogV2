@@ -1,3 +1,5 @@
+export type PageData<T> = { data: T };
+
 export type Author = {
 	data: {
 		id: number;
